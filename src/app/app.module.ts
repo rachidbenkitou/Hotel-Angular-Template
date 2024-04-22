@@ -11,13 +11,11 @@ import {provideAnimationsAsync} from '@angular/platform-browser/animations/async
 import {NgSelectModule} from "@ng-select/ng-select";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {SharedModule} from "./developments/shared/shared.module";
-import { LandingPageComponent } from './developments/landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
-    LandingPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,12 +26,12 @@ import { LandingPageComponent } from './developments/landing-page/landing-page.c
     NgSelectModule,
     ReactiveFormsModule,
     FormsModule,
-    SharedModule
+    SharedModule,
   ],
   providers: [
     provideClientHydration(),
-    provideAnimations(), // required animations providers
-    provideToastr(), provideAnimationsAsync(), // Toastr providers
+    provideAnimations(),
+    provideToastr(), provideAnimationsAsync(),
   ],
   exports: [],
   bootstrap: [AppComponent]

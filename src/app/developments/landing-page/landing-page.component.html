@@ -1,1 +1,29 @@
-<p>landing-page works!</p>
+<section id="home" class="banner_wrapper p-0">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image: url(assets/images/slider/slider2.webp)">
+        <div class="slide-caption text-center">
+          <div>
+            <h1>welcome to hotel in Dubai</h1>
+            <p>Directives are instructions in the DOM! Directives are defined as classes that can add new behavior to
+              the elements in the template or modify existing behavior.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide" style="background-image: url(assets/images/slider/slider1.webp)">
+        <div class="slide-caption text-center">
+          <div>
+            <h1>welcome to hotel in Dubai</h1>
+            <p>Directives are instructions in the DOM! Directives are defined as classes that can add new behavior to
+              the elements in the template or modify existing behavior.</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <span class="nav-icon prev-icon" style="font-size: 100px; cursor: pointer" (click)="prevSlide()">&#10094;</span>
+  <span class="nav-icon next-icon" style="font-size: 100px; cursor: pointer" (click)="nextSlide()">&#10095;</span>
+</section>
